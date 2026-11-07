@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>College Admission Form</h2>
+        <p class="form-subtitle">Submit your details to apply for the upcoming academic batch.</p>
+        
+        <form action="#" method="POST">
+            <!-- Full Name Section -->
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit number" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+
+            <!-- Course Choice Dropdown -->
+            <div class="form-group">
+                <label for="course">Select Course Specialization</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Choose a department...</option>
+                    <option value="aiml">Diploma in AI & Machine Learning (AIML)</option>
+                    <option value="comps">Diploma in Computer Engineering</option>
+                    <option value="it">Diploma in Information Technology</option>
+                </select>
+            </div>
+
+            <!-- Gender Radio Selection -->
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+            </div>
+
+            <!-- Declaration Checkbox -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="declare" name="declare" required>
+                <label for="declare">I hereby declare that all the details provided above are true and accurate to the best of my knowledge.</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>
